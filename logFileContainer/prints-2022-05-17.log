@@ -1,0 +1,6 @@
+23:27:02.977 [AsyncHttpClient-1-4] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+23:27:19.024 [main] TRACE techstats.greenKartTest.HomePageTest - Trace message
+23:27:19.026 [main] INFO  techstats.greenKartTest.HomePageTest - Info message
+23:27:19.026 [main] ERROR techstats.greenKartTest.HomePageTest - Error message observed...................
+23:27:19.026 [main] DEBUG techstats.greenKartTest.HomePageTest - Debug message
+23:27:19.026 [main] TRACE techstats.greenKartTest.HomePageTest - Trace message end

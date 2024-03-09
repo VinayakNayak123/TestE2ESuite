@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="techstats.e2eFramework.AutoListeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="GreenKart(failed)">
+    <classes>
+      <class name="techstats.greenKartTest.HomePageTest">
+        <methods>
+          <include name="demoTestSecondFail"/>
+          <include name="demoTestFail"/>
+          <include name="sampleTestFailure"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- techstats.greenKartTest.HomePageTest -->
+    </classes>
+  </test> <!-- GreenKart(failed) -->
+</suite> <!-- Failed suite [Regression] -->
