@@ -53,7 +53,7 @@ public class SaleTransactionTest extends TechstatsBase{
 		
 		hm.clickOnCartIcon();
 		MyCartPage cp = new MyCartPage(driver);
-		cp.checkOutProcess();
+		cp.checkOutProcess();  //test end here
 		
 		
 	}
