@@ -41,6 +41,7 @@ public class BasketTest extends TechstatsBase {
 	@AfterTest
 	public void closeDriver()
 	{
+		// Close driver
 		driver.close();
 	}
 
