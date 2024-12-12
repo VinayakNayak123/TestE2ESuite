@@ -17,22 +17,54 @@
     
   </properties>
 
-<build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M6</version>
-          <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+
+<profiles>
+	<profile>
+		<id>
+		Regression
+		</id>
+		
+		<build>
+    		<pluginManagement>
+      			<plugins>
+        			<plugin>
+         				<groupId>org.apache.maven.plugins</groupId>
+        				<artifactId>maven-surefire-plugin</artifactId>
+        				<version>3.5.2</version>
+          				<configuration>
+          				<suiteXmlFiles>
+            			<suiteXmlFile>testSuite\testng.xml</suiteXmlFile>
+          				</suiteXmlFiles>
+        				</configuration>
+        			</plugin>
+      			</plugins>
+    		</pluginManagement>
+  		</build>
+  		
+	</profile>
+	
+	<profile>
+		<id>
+		Sale
+		</id>
+	</profile>
+	
+	<profile>
+		<id>
+		Sanity
+		</id>
+	</profile>
+	
+	
+</profiles>
+
+
+
+
+
+
+
+
 
 
 
@@ -47,7 +79,7 @@
 	<dependency>
 		<groupId>org.testng</groupId>
 		<artifactId>testng</artifactId>
-		<version>7.5</version>
+		<version>7.4.0</version>
 		<scope>test</scope>
 	</dependency>
 	
@@ -61,7 +93,7 @@
 	<dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>5.0.9</version>
+    <version>5.1.2</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 <dependency>
@@ -76,6 +108,8 @@
     <artifactId>log4j-api</artifactId>
     <version>2.17.2</version>
 </dependency>
+
+
 
     
   </dependencies>

@@ -1,6 +1,5 @@
-package techstats.e2eFramework;
+/*package techstats.e2eFramework;
 
-import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -8,10 +7,11 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import techstats.base.TechstatsBase;
-import techstats.reporting.ExtentReportCreate;
 
-public class AutoListeners extends TechstatsBase  implements ITestListener{
+import techstats.reporting.ExtentReportCreate;*/
+
+//public class AutoListeners extends TechstatsBase  implements ITestListener{
+	/*
 
 	ExtentReports extent =ExtentReportCreate.getReportObject();
 	ExtentTest test;
@@ -58,15 +58,7 @@ public class AutoListeners extends TechstatsBase  implements ITestListener{
 		
 	}
 
-	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
-	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		extent.flush();
-		
-	}
-
-}
+*/
+//}
