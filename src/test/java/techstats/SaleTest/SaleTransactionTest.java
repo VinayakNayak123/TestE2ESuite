@@ -63,6 +63,7 @@ public class SaleTransactionTest extends TechstatsBase{
 	@Test
 	public void standaloneTests() throws InterruptedException
 	{
+		//Standalone tests
 		String productName = "ZARA COAT 3";
 		cartPage = new CartLoginPage(driver);
 		cartPage.enterUserNameAndPassword("user@usertest.com", "Usertest@123");
